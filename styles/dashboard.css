@@ -1,0 +1,556 @@
+@import url("/index.css");
+@import url("/shared/css/header.css");
+@import url("/shared/css/userinfo.css");
+@import url("/shared/css/button.css");
+@import url('/shared/css/input.css');
+@import url("/shared/css/table.css");
+@import url("/shared/css/footer.css");
+
+/*-----------BOUNDING CONTAINER----------*/
+
+[class*="__container"] {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media(max-width: 1199.98px) {
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+
+@media(max-width: 990.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+        padding: 0px 15px;
+    }
+}
+/*-------END OF BOUNDING CONTAINER-------*/
+
+/*------------------------------------------------------DASBOARD---------------------------------------------------------------------*/
+/*---------------RIGHT COL---------------*/
+
+.main__right-col {
+    -webkit-box-flex:5;
+        -ms-flex:5;
+            flex:5;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.right-col__completeness, .right-col__accounts {
+    padding: 24px;
+    -webkit-box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    border-radius: 0.25rem;
+    background-color: #fff;
+    margin-bottom: 24px;
+}
+.completeness__heading, .accounts__heading {
+    margin-bottom: 24px;
+    color: #1e1d1c;
+    line-height: 1.2;
+    font-size: 21px;
+    font-weight: 400;
+}
+.completeness__hr, .accounts__hr {
+    border-top: 1px solid rgba(16, 85, 96, 0.1);
+    margin: 16px -24px 24px -24px;
+}
+.completeness__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.completeness-row__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 24px 12px;
+    border: 1px solid #ecf1f2 !important;
+    text-align: center;
+    margin: 0 10px;
+}
+
+@media(max-width: 767.98px) {
+    .completeness__row {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .completeness-row__item {
+        -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+        min-width: 246px;
+        margin: 10px;
+    }
+    .main__right-col {
+        padding:  0px;
+    }
+}
+
+.fa-mobile-alt, .fa-university, .fa-envelope, .fa-user-check {
+    font-size: 40px;
+    margin: 8px 0px 16px 0px;
+    color: #dee3e4;
+}
+.row-item__sub-icon-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.row-item__sub-icon {
+    font-size: 21px;
+}
+.row-item__link:hover {
+    text-decoration: underline;
+}
+.row-item__status-text {
+    line-height: 1.9;
+    font-size: 14px;
+    color: #4c4d4d;
+    margin-top: 20px;
+    font-weight: 400;
+}
+/*------------END OF RIGHT COL------------*/
+
+/*------------RIGHT CENTER COL------------*/
+
+.accounts__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.accounts-row__left-col {
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
+    margin: auto;
+}
+
+.row__left-col-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: -o-linear-gradient(135deg, #000000, #7d7d7d);
+    background: linear-gradient(-45deg, #000000, #7d7d7d);
+    border-radius: 0.25rem;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.card__left-col, .right-card__left-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 16px;
+}
+.card__left-col-icon, .right-card__left-col-icon {
+    font-size: 52px;
+    color: #fff;
+}
+
+@media(max-width: 468.99px) {
+    .card__left-col, .right-card__left-col {
+        padding: 16px 8px;
+    }
+
+    .card__left-col-icon, .right-card__left-col-icon {
+        font-size: 32px;
+        color: #fff;
+    }
+}
+
+.card__left-col-container, .right-card__left-col-container {
+    padding: 3px 8px;
+    background-color: #fbfbfb;
+    border-radius: 50rem;
+}
+.card__left-col-text, .right-card__left-col-text {
+    font-size: 11px;
+}
+.card__right-col, .right-card__right-col {
+    border-color: rgba(250, 250, 250, 0.1);
+    border-left: 1px solid rgba(250, 250, 250, 0.1);
+}
+.card__right-col-wrapper, .right-card__right-col-wrapper{
+    margin: 8px 0;
+    padding: 24px 0px 24px 24px;
+}
+.card__right-col-heading, .right-card__right-col-heading {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.9;
+    margin-bottom: 4px;
+    color: #fff;
+}
+.card__right-col-amount, .right-card__right-col-amount {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-bottom: 4px;
+    color: #fff;
+    opacity: 0.9
+}
+.card__right-col-verified, .right-card__right-col-verified {
+    font-size: 14px;
+    line-height: 1.9;
+    color:#fff;
+}
+.card__right-col-verified-container, .right-card__right-col-verified-container {
+    font-size: 16px;
+    font-weight: 900;
+}
+.card__right-col-verified-icon, .right-card__right-col-verified-icon {
+    font-size: 16px;
+    font-weight: 900;
+}
+.accounts-row__right-col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+
+@media(max-width: 767.98px) {
+    .accounts__row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .accounts-row__left-col, .accounts-row__right-col {
+        -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .card__right-col-wrapper {
+        padding: 24px 0px 24px 46px;
+    }
+}
+
+@media(max-width: 543.98px) {
+    .card__right-col-wrapper {
+        padding: 24px 0px 24px 24px;
+    }
+}
+
+@media(max-width: 426.98px) {
+    .card__right-col-wrapper, .right-card__right-col-wrapper {
+        padding: 24px 0px 24px 8px;
+    }
+
+    .right-card__right-col-heading {
+        overflow-wrap: break-word;
+    }
+
+    .right-card__right-col {
+        overflow: hidden;
+    }
+}
+
+.row__right-col-card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: -o-linear-gradient(135deg, #6c6c6b, #9e9e9c);
+    background: linear-gradient(-45deg, #6c6c6b, #9e9e9c);
+    border-radius: 0.25rem;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.right-card__left-col-icon {
+    margin: 8px 0px 16px 0px;
+}
+
+.account-card-overlay-link {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.account-card-overlay-link:hover {
+    opacity: 1;
+}
+.overlay__link-icon {
+    color: #fff;
+}
+
+/*--------------ADD BANK MODAL-----------*/
+
+.add-bank__modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999;
+    margin: auto;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.537); 
+    padding: 0 20px;
+}
+
+.add-bank__modal-content {
+    position: relative;
+    top: 15%;
+    max-width: 500px;
+    background-color: #fefefe;
+    margin: auto;
+    pointer-events: auto;
+    border-radius: 0.3rem;
+}
+
+@media(max-height:667.98px){
+    .add-bank__modal-content {
+        top: 7%;
+    }
+}
+
+.add-bank__heading {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.add-bank__header {
+    line-height: 1.5;
+    font-size: 20px;
+    color: #1e1d1c;
+}
+.add-bank__closeBtn {
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    font-size: 24px;
+    cursor: pointer;
+}
+.add-bank__modal-body {
+    padding: 24px;
+}
+.add-bank__form {
+    color: #4c4d4d;
+}
+.add-bank__form-checkgroup {
+    margin-bottom: 21px;
+    display: flex;
+}
+.add-bank__form-checkbox {
+    line-height: 22px;
+    margin-right: 12px;
+}
+.l-radio {
+    display: inline-flex;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.l-radio-input {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: none;
+    border: 0;
+    box-shadow: inset 0 0 0 0.2px rgb(111, 111, 111);
+    box-shadow: inset 0 0 0 0.2px rgb(111, 111, 111);
+    appearance: none;
+    padding: 0;
+    margin-right: 8px;
+    transition: box-shadow 100ms cubic-bezier(.95,.15,.5,1.25);
+    pointer-events: none;
+    background: #fff;
+}
+
+.l-radio-input:focus {
+    outline: none
+}
+
+.l-radio-input:checked {
+    box-shadow: inset 0 0 0 4.2px #000000;
+}
+
+.add-bank__form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 21px;
+}
+
+.controlled-label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/*----------CUSTOM CHECKBOX--------------*/
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 21px;
+    cursor: pointer;
+    color: #4c4d4d;
+    font-size: 14px;
+    line-height: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 0.5px solid rgb(186, 186, 186);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #000000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*----------END OFCUSTOM CHECKBOX--------*/
+/*--------END OF ADD BANK MODAL----------*/
+/*--------END OF RIGHT CENTER COL--------*/
+
+
+/*-----------RIGHT BOTTOM COL------------*/
+
+.right-col__activity {
+    padding: 24px 0;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    margin-bottom: 24px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    border-radius: 0.25rem;
+}
+
+.activity__more {
+    margin-top: 24px;
+    text-align: center;
+}
+.activity__more-link {
+    color: #3a3a3a;
+    font-size: 16px;
+    font-weight: 400;
+}
+.activity__more-link-arrow {
+    font-size: 12px;
+}
+
+.activity__more-link:hover {
+    text-decoration: underline;
+}
+
+/*--------END OF RIGHT BOTTOM COL--------*/
+
+/*-------------END OF MAIN---------------*/
+
+/*-------------------------------------END OF DASBOARD---------------------------------------*/

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/security.css">
+    <script src="https://kit.fontawesome.com/d896977479.js" crossorigin="anonymous"></script>
+    <title>Transit</title>
+</head>
+
+<body>
+    <!-----PRELOADER----->
+    <div class="preloader">
+        <div class="lds-dual-ring"></div>
+    </div>
+    <!-----END OF PRELOADER----->
+
+    <!-----HEADER----->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="./dashboard.html" class="logo__link">
+                    <img src="../images/logo.svg" alt="logo" class="header__logo-content">
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item nav-item">
+                        <a href="./dashboard.html" class="nav-item__link">DASHBOARD</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./transactions.html" class="nav-item__link">TRANSACTIONS</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./withdraw.html" class="nav-item__link">WITHDRAW</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./myprofile.html" class="nav-item__link">MY PROFILE</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./security.html" class="nav-item__link">SECURITY</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./login.html" class="nav-item__link">SIGN OUT</a>
+                    </li>
+                </ul>
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="40" height="35" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+            </nav>
+            <nav class="header-primary__nav">
+                <div class="header-primary__nav-container">
+                    <ul class="header-primary__nav-list">
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./transactions.html">TRANSACTIONS</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./withdraw.html">WITHDRAW</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./myprofile.html">MY PROFILE</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./security.html">SECURITY</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./login.html">SIGN OUT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-----END OF HEADER----->
+
+    <!-----MAIN----->
+    <section class="main__page main">
+        <main class="main__container">
+
+            <!-----LEFT COL----->
+            <aside class="main__left-col">
+                <div class="left-col__user">
+                    <div class="user__profile-image-con">
+                        <img class="user__profile-image" src="../images/person.png" alt="profile">
+                        <div class="user__profile-sm-container">
+                            <i class="change-icon fas fa-camera"></i>
+                            <div class="tooltip-top">
+                                <input class="change-button" type="file" name="data-edit-photo" title=" ">
+                                <div class="top">
+                                    <h3>Change Profile Picture</h3>
+                                    <i></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="user__username">Hello, Хади Измайлова</p>
+                    <div class="user__edit-continer">
+                        <a href="../pages/myprofile.html" class="edit-container__link">
+                            <i class="edit-icon fas fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="left-col__balance">
+                    <div class="balance__icon-container">
+                        <i class="balance-icon fas fa-wallet"></i>
+                    </div>
+                    <h3 class="balance__amount">$0.00</h3>
+                    <p class="balance__available">Available Balance</p>
+                </div>
+            </aside>
+            <!-----END OF LEFT COL----->
+
+            <!-----RIGHT COL----->
+            <div class="main__right-col">
+
+                <!-----PASSWORD----->
+                <div class="right-col__password">
+                    <div class="right-col__password-heading">
+                        <h3 class="right-col__password-header">Password</h3>
+                        <div class="right-col__password-change">
+                            <i class="right-col__password-change-icon fas fa-edit"></i>
+                            <span class="right-col__password-change-text">CHANGE</span>
+                        </div>
+                    </div>
+                    <hr class="right-col__password-hr">
+                    <p class="right-col__password-text">
+                        Create or update your password. -
+                        <span class="right-col__password-info">
+                            Last changed: Fri, 18 Nov 22 10:47:42 +0000
+                        </span>
+                    </p>
+
+                    <!-----PASSWORD MODAL----->
+                    <div class="password-change__modal">
+                        <div class="password-change__modal-content">
+                            <div class="password-change__heading">
+                                <h3 class="password-change__header">Change Password</h3>
+                                <span class="password-change__closeBtn">&times;</span>
+                            </div>
+                            <div class="password-change__modal-body">
+                                <form id="changepassword" action="#" class="password-change__form">
+                                    <div class="password-change__form-group">
+                                        <label for="existingPassword"
+                                            class="password-change__label cur-password">Confirm Current Password</label>
+                                        <input id="existingPassword" type="text"
+                                            class="password-change__cur-password-input shared__input"
+                                            placeholder="Enter Current Password">
+                                    </div>
+                                    <div class="password-change__form-group">
+                                        <label for="newPassword" class="password-change__label cur-password">New
+                                            Password</label>
+                                        <input id="newPassword" type="text"
+                                            class="password-change__cur-password-input shared__input"
+                                            placeholder="Enter New Password">
+                                    </div>
+                                    <div class="password-change__btn-container">
+                                        <button class="password-change__btn shared__button-black" type="submit">Update
+                                            Password</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----END OF PASSWORD MODAL----->
+                </div>
+                <!-----END OF PASSWORD----->
+
+                <!-----SECURITY----->
+                <div class="right-col__security">
+                    <div class="right-col__security-heading">
+                        <h3 class="right-col__security-header">Security Questions</h3>
+                        <div class="right-col__security-change">
+                            <i class="right-col__security-change-icon fas fa-edit"></i>
+                            <span class="right-col__security-change-text">CHANGE</span>
+                        </div>
+                    </div>
+                    <hr class="right-col__security-hr">
+                    <p class="right-col__security-text">
+                        For your protection, please choose 3 security questions. This way, we can verify it’s really you
+                        if there’s ever a doubt.
+                    </p>
+
+                    <!-----SECURITY MODAL----->
+                    <div class="security__modal">
+                        <div class="security__modal-content">
+                            <div class="security__heading">
+                                <h3 class="security__header">Security Questions</h3>
+                                <span class="security__closeBtn">&times;</span>
+                            </div>
+                            <div class="security__modal-body">
+                                <h5 class="security__sub-header">We'll use these questions as a way to make sure it's
+                                    your account, like if you need to reset your password.</h5>
+                                <form id="changesecurity" action="#" class="security__form">
+                                    <div class="security__form-group"></div>
+                                    <div class="security__form-group"></div>
+                                    <div class="security__form-group"></div>
+                                    <div class="security__btn-container">
+                                        <button class="security__btn shared__button-black">
+                                            Save Changes
+                                        </button>
+                                        </d>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----END OF SECURITY MODAL----->
+                </div>
+            </div>
+            <!-----END OF SECURITY----->
+
+            <!-----TRANSACTIONS----->
+            <div class="right-col__transaction">
+                <div class="right-col__transaction-heading">
+                    <h3 class="right-col__transaction-header">Security of Transactions</h3>
+                    <div class="right-col__transaction-change">
+                        <i class="right-col__transaction-change-icon fas fa-edit"></i>
+                        <span class="right-col__transaction-change-text">CHANGE</span>
+                    </div>
+                </div>
+                <hr class="right-col__transaction-hr">
+                <p class="right-col__transaction-text">
+                    The fee is charged in excess of the transfer amount:
+                    <i class="right-col__transaction-icon fas fa-check-circle"></i>
+                </p>
+
+                <!-----TRANSACTIONS MODAL----->
+                <div class="transaction__modal">
+                    <div class="transaction__modal-content">
+                        <div class="transaction__heading">
+                            <h3 class="transaction__header">Security of Transactions</h3>
+                            <span class="transaction__closeBtn">&times;</span>
+                        </div>
+                        <div class="transaction__modal-body">
+                            <form id="changepassword" action="#" class="transaction__form">
+                                <div class="transaction__agreement">
+                                    <label class="container">
+                                        The fee is charged in excess of the transfer amount.
+                                        <input type="checkbox" name="remember">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <button class="transaction__btn shared__button-black">
+                                    Update
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-----END OF TRANSACTIONS MODAL----->
+            </div>
+            <!-----END OF TRANSACTIONS----->
+            </div>
+        </main>
+    </section>
+    <!-----END OF MAIN----->
+
+    <!-----FOOTER----->
+    <footer class="dashboard__footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <p class="footer__content-text">
+                    Copyright © 2021.
+                    <a href="#" class="footer__content-link">
+                        Transit.
+                    </a>
+                    All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-----END OF FOOTER----->
+
+    <script src="../shared/js/templates/select.js"></script>
+    <script src="../shared/js/modalStyleHelper.js"></script>
+    <script src="../scripts/security.js"></script>
+    <script src="../shared/js/mobileNav.js"></script>
+    <script src="../shared/js/preloader.js"></script>
+</body>
+
+</html>

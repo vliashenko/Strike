@@ -1,0 +1,84 @@
+@import url("/index.css");
+@import url("/shared/css/header.css");
+@import url("/shared/css/input.css");
+@import url("/shared/css/button.css");
+@import url("/shared/css/select.css");
+@import url("/shared/css/footer.css");
+@import url("/shared/css/withdraw.css");
+
+/*-----------PROGRESS----------*/
+.withdraw__heading {
+    padding: 24px;
+    background-color: #000000;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.withdraw__body-header {
+    line-height: 1.2;
+    font-size: 40px;
+    color: #fff;
+}
+.withdraw__sub-title {
+    color: #fff;
+    margin-bottom: 16px;    
+}
+
+.withdraw__form-label {
+    margin-bottom: 8px;
+}
+
+.withdraw__form-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: stretch;
+    -webkit-box-align: stretch;
+            align-items: stretch;
+    width: 100%;
+}
+.withdraw__form-input-sign {
+    margin-right: -1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.withdraw__form-input-sign-text {
+    border-color: #dae1e3;
+    background-color: #f1f5f6;
+    color: #656565;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 6px 12px;
+    margin-bottom: 1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid #ced4da;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.withdraw__form-input {
+    font-family: inherit;
+    font-weight: 400;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #e9ecef;
+    opacity: 1;
+    border-color: #dae1e3;
+    font-size: 16px;
+    color: #656565;
+    padding: 13px 15px;
+}
+/*-------------END OF PROGRESS-----------*/

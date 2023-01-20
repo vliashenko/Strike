@@ -1,0 +1,85 @@
+@import url("/index.css");
+@import url("/shared/css/header.css");
+@import url("/shared/css/button.css");
+@import url("/shared/css/footer.css");
+@import url("/shared/css/withdraw.css");
+
+/*-----------PROGRESS----------*/
+.progress__left, .progress__center, .progress__right {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #000000;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.step__dot-link-left, .step__dot-link-center, .step__dot-link {
+    background: #000000;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 1px solid #000000;
+    top: 45px;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+}
+
+.step__dot-link-left::after, .step__dot-link-center::after, .step__dot-link::after {
+    content: '\f00c';
+    font-weight: 900;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    top: 3px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.withdraw__body {
+    padding: 24px;
+    text-align: center;
+}
+
+.withdraw__body-content {
+    margin: 24px 0;
+}
+
+.withdraw__status-marker {
+    margin-bottom: 16px;
+}
+.withdraw__status-marker-icon {
+    font-weight: 900;
+    font-size: 96px;
+    color: #000000;
+}
+
+.withdraw__heading {
+    line-height: 1.2;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+}
+/*-------------END OF PROGRESS-----------*/

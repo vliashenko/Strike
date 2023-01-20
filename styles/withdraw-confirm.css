@@ -1,0 +1,166 @@
+@import url("/index.css");
+@import url("/shared/css/header.css");
+@import url("/shared/css/button.css");
+@import url("/shared/css/footer.css");
+@import url("/shared/css/withdraw.css");
+
+/*-----------PROGRESS----------*/
+
+.progress__left {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #000000;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.step__dot-link-left {
+    background: #000000;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 1px solid #000000;
+    top: 45px;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+}
+
+.progress__center {
+    width: 50%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #000000;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.step__dot-link-center {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: #fff;
+    border: 1px solid #000000;
+    top: 45px;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+}
+
+.step__dot-link-center::after {
+    content: '';
+    background: #000000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+
+.step__dot-link-left::after {
+    content: '\f00c';
+    font-weight: 900;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    top: 3px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.withdraw__heading {
+    font-size: 19.52px;
+    text-align: center;
+    position: relative;
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+}
+.withdraw__header-top {
+    font-weight: 300;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1px;
+    line-height: 1.7;
+}
+
+.withdraw__header-center {
+    font-weight: 500;
+    color: #1b1e21;
+    line-height: 1.7;
+}
+.withdraw__header-bottom {
+    font-weight: 500;
+    color: #1b1e21;
+    line-height: 1.9;
+}
+
+.withdraw__amount {
+    margin: 24px 0 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.withdraw__amount-number {
+    float: right;
+    font-size: 16px;
+}
+
+.withdraw__total {
+    margin: 0px 0 16px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.withdraw__total-number {
+    float: right;
+    font-size: 18px;
+}
+/*-------------END OF PROGRESS-----------*/

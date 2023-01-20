@@ -1,0 +1,417 @@
+@import url("/index.css");
+@import url("/shared/css/header.css");
+@import url("/shared/css/input.css");
+@import url("/shared/css/button.css");
+@import url("/shared/css/select.css");
+@import url("/shared/css/userinfo.css");
+@import url("/shared/css/footer.css");
+
+/*-----------BOUNDING CONTAINER----------*/
+
+[class*="__container"] {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media(max-width: 1199.98px) {
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+
+@media(max-width: 990.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+        padding: 0px 15px;
+    }
+}
+
+/*-------END OF BOUNDING CONTAINER-------*/
+
+/*-----------------------------------------------------------SECURITY---------------------------------------------------------------*/
+
+/*---------------RIGHT COL---------------*/
+
+.main__right-col {
+    padding: 0 8px;
+    -webkit-box-flex:3;
+        -ms-flex:3;
+            flex:3;
+}
+
+@media(max-width: 990.98px){
+    .main__right-col {
+        padding: 0px 24px;
+    }
+}
+
+@media(max-width: 767.98px){
+    .main__right-col {
+        padding: 0px;
+    }
+}
+
+.right-col__password, .right-col__security ,.right-col__transaction {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    margin-bottom: 24px;
+}
+.right-col__password-heading, .right-col__security-heading , .right-col__transaction-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 24px;
+}
+.right-col__password-header, .right-col__security-header , .right-col__transaction-header {
+    color: #1e1d1c;
+    font-size: 21px;
+    -webkit-box-flex: 2.7;
+        -ms-flex: 2.7;
+            flex: 2.7;
+}
+.right-col__password-change, .right-col__security-change , .right-col__transaction-change {
+    color: #1e1d1c;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.right-col__password-change-text, .right-col__security-change-text , .right-col__transaction-change-text {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.right-col__password-change-text:hover, 
+.right-col__security-change-text:hover, 
+.right-col__transaction-change-text:hover {
+    text-decoration: underline;
+}
+
+.fa-edit {
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.right-col__password-hr, .right-col__security-hr , .right-col__transaction-hr {
+    border-top: 1px solid rgba(16, 85, 96, 0.1);
+    margin: 16px -24px 24px -24px;
+}
+.right-col__password-text, .right-col__security-text , .right-col__transaction-text {
+    font-size: 16px;
+    margin-bottom: 16px;
+    line-height: 1.9;
+    padding-top: 8px;
+}
+
+.right-col__password-info {
+    color: #8e9a9d;
+}
+
+/*--------PASSWORD CHANGE MODAL----------*/
+
+.password-change__modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999;
+    margin: auto;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.537); 
+    padding: 0 20px;
+}
+
+.password-change__modal-content{
+    position: relative;
+    top: 24%;
+    max-width: 500px;
+    background-color: #fefefe;
+    margin: auto;
+    pointer-events: auto;
+    border-radius: 0.3rem;    
+}
+
+.password-change__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.password-change__header {
+    line-height: 1.5;
+    color: #1e1d1c;
+    font-size: 20px;
+}
+.password-change__closeBtn {
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    font-size: 24px;
+    cursor: pointer;
+}
+.password-change__modal-body {
+    padding: 24px;
+}
+.password-change__form {
+    color: #4c4d4d;
+}
+.password-change__form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 21px;
+}
+.password-change__label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/*-----END OF PASSWORD CHANGE MODAL------*/
+
+/*-------------SECURITY MODAL------------*/
+
+.security__modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999;
+    margin: auto;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.537); 
+    padding: 0 20px;
+}
+
+.security__modal-content{
+    position: relative;
+    top: 1%;
+    max-width: 500px;
+    background-color: #fefefe;
+    margin: auto;
+    pointer-events: auto;
+    border-radius: 0.3rem;    
+}
+
+.security__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.security__header {
+    line-height: 1.5;
+    color: #1e1d1c;
+    font-size: 20px;
+}
+.security__closeBtn {
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    font-size: 24px;
+    cursor: pointer;
+}
+.security__modal-body {
+    padding: 24px;
+}
+
+.security__sub-header {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.security__form {
+    color: #4c4d4d;
+}
+.security__form-group {
+ margin: 20px 0px;
+}
+
+.security__form-label {
+    margin-bottom: 8px;
+}
+
+/*---------END OF SECURITY MODAL---------*/
+
+/*---------TRANSACTIONS MODAL------------*/
+.transaction__modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999;
+    margin: auto;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.537); 
+    padding: 0 20px;
+}
+.transaction__modal-content {
+    position: relative;
+    top: 30%;
+    max-width: 500px;
+    background-color: #fefefe;
+    margin: auto;
+    pointer-events: auto;
+    border-radius: 0.3rem;    
+}
+.transaction__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.transaction__header {
+    line-height: 1.5;
+    color: #1e1d1c;
+    font-size: 20px;
+}
+.transaction__closeBtn {
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    font-size: 24px;
+    cursor: pointer;
+}
+.transaction__modal-body {
+    padding: 24px;
+}
+
+/*----------CUSTOM CHECKBOX--------------*/
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 21px;
+    cursor: pointer;
+    color: #8e9a9d;
+    font-size: 14px;
+    line-height: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 0.5px solid rgb(186, 186, 186);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #000000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*----------END OFCUSTOM CHECKBOX--------*/
+
+/*--------END OF TRANSACTIONS MODAL------*/
+/*--------------END OF RIGHT COL---------*/
+/*-------------END OF MAIN---------------*/

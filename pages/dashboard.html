@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <script src="https://kit.fontawesome.com/d896977479.js" crossorigin="anonymous"></script>
+    <title>Transit</title>
+</head>
+
+<body>
+    <!-----PRELOADER----->
+
+    <div class="preloader">
+        <div class="lds-dual-ring"></div>
+    </div>
+
+    <!-----END OF PRELOADER----->
+
+    <!-----HEADER----->
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="./dashboard.html" class="logo__link">
+                    <img src="../images/logo.svg" alt="logo" class="header__logo-content">
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item nav-item">
+                        <a href="./dashboard.html" class="nav-item__link">DASHBOARD</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./transactions.html" class="nav-item__link">TRANSACTIONS</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./withdraw.html" class="nav-item__link">WITHDRAW</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./myprofile.html" class="nav-item__link">MY PROFILE</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./security.html" class="nav-item__link">SECURITY</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./login.html" class="nav-item__link">SIGN OUT</a>
+                    </li>
+                </ul>
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="40" height="35" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+            </nav>
+            <nav class="header-primary__nav">
+                <div class="header-primary__nav-container">
+                    <ul class="header-primary__nav-list">
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./transactions.html">TRANSACTIONS</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./withdraw.html">WITHDRAW</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./myprofile.html">MY PROFILE</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./security.html">SECURITY</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./login.html">SIGN OUT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-----END OF HEADER----->
+
+    <!-----MAIN----->
+
+    <section class="main__page main">
+        <main class="main__container">
+
+            <!-----LEFT COL----->
+
+            <aside class="main__left-col">
+                <div class="left-col__user">
+                    <div class="user__profile-image-con">
+                        <img class="user__profile-image" src="../images/person.png" alt="profile">
+                        <div class="user__profile-sm-container">
+                            <i class="change-icon fas fa-camera"></i>
+                            <div class="tooltip-top">
+                                <input class="change-button" type="file" name="data-edit-photo" title=" ">
+                                <div class="top">
+                                    <h3>Change Profile Picture</h3>
+                                    <i></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="user__username">Hello, Хади Измайлова</p>
+                    <div class="user__edit-continer">
+                        <a href="../pages/myprofile.html" class="edit-container__link">
+                            <i class="edit-icon fas fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="left-col__balance">
+                    <div class="balance__icon-container">
+                        <i class="balance-icon fas fa-wallet"></i>
+                    </div>
+                    <h3 class="balance__amount">$0.00</h3>
+                    <p class="balance__available">Available Balance</p>
+                </div>
+            </aside>
+
+            <!-----END OF LEFT COL----->
+
+            <!-----RIGHT COL----->
+
+            <div class="main__right-col">
+
+                <!-----COMPLETENESS----->
+
+                <div class="right-col__completeness">
+                    <h3 class="completeness__heading">Profile Completeness</h3>
+                    <hr class="completeness__hr">
+                    <div class="completeness__row">
+                        <div class="completeness-row__item">
+                            <div class="row-item__icon-container">
+                                <i class="row-item__icon fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="row-item__sub-icon-container">
+                                <i class="row-item__sub-icon fas fa-check-circle"></i>
+                            </div>
+                            <p class="row-item__status-text">Mobile Added</p>
+                        </div>
+                        <div class="completeness-row__item">
+                            <div class="row-item__icon-container">
+                                <i class="row-item__icon fas fa-envelope"></i>
+                            </div>
+                            <div class="row-item__sub-icon-container">
+                                <i class="row-item__sub-icon fas fa-check-circle"></i>
+                            </div>
+                            <p class="row-item__status-text">Email Added</p>
+                        </div>
+                        <div class="completeness-row__item">
+                            <div class="row-item__icon-container">
+                                <i class="row-item__icon fas fas fa-user-check"></i>
+                            </div>
+                            <div class="row-item__sub-icon-container">
+                                <i class="row-item__sub-icon fas fa-check-circle"></i>
+                            </div>
+                            <a href="../pages/myprofile.html" class="row-item__link">
+                                <p class="row-item__status-text">Verified Completed</p>
+                            </a>
+                        </div>
+                        <div class="completeness-row__item">
+                            <div class="row-item__icon-container">
+                                <i class="row-item__icon fas fas fa-university"></i>
+                            </div>
+                            <div class="row-item__sub-icon-container">
+                                <i class="row-item__sub-icon fas fa-check-circle"></i>
+                            </div>
+                            <a href="../pages/myprofile.html" class="row-item__link">
+                                <p class="row-item__status-text">Bank Account Added</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-----END OF COMPLETENESS----->
+
+                <!-----ACCOUNTS----->
+
+                <div class="right-col__accounts">
+                    <h3 class="accounts__heading">Bank Accounts</h3>
+                    <hr class="accounts__hr">
+                    <div class="accounts__row">
+                        <div class="accounts-row__left-col">
+                            <div class="row__left-col-card">
+                                <div class="card__left-col">
+                                    <i class="card__left-col-icon fas fa-university"></i>
+                                    <div class="card__left-col-container">
+                                        <p class="card__left-col-text">
+                                            Primary
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__right-col">
+                                    <div class="card__right-col-wrapper">
+                                        <p class="card__right-col-heading">WT 7320 MFXP 231032</p>
+                                        <p class="card__right-col-amount">$0.00</p>
+                                        <p class="card__right-col-verified">Verified
+                                            <span class="card__right-col-verified-container">
+                                                <i class="card__right-col-verified-icon fas fa-check-circle"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accounts-row__right-col">
+                            <div class="row__right-col-card">
+                                <div class="right-card__left-col">
+                                    <i class="right-card__left-col-icon fas fa-file-invoice-dollar"></i>
+                                    <div class="right-card__left-col-container">
+                                        <p class="right-card__left-col-text">
+                                            Primary
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="right-card__right-col">
+                                    <div class="right-card__right-col-wrapper">
+                                        <p class="right-card__right-col-heading">
+                                            040702615
+                                            <br>
+                                            40817810960350117018
+                                        </p>
+                                        <p class="right-card__right-col-amount">Ставропольское отделение №5230 ПАО
+                                            СБЕРБАНК</p>
+                                        <p class="right-card__right-col-verified">Хади Измайлова
+                                            <span class="right-card__right-col-verified-container">
+                                                <i class="right-card__right-col-verified-icon fas fa-check-circle"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="account-card-overlay">
+                                    <p class="account-card-overlay-link">
+                                        <span class="overlay__link-icon">
+                                            <i class="fas fa-edit"></i>
+                                        </span>
+                                        Edit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-----ADD BANK MODAL----->
+
+                <div class="add-bank__modal">
+                    <div class="add-bank__modal-content">
+                        <div class="add-bank__heading">
+                            <h3 class="add-bank__header">Add bank account</h3>
+                            <span class="add-bank__closeBtn">&times;</span>
+                        </div>
+                        <div class="add-bank__modal-body">
+                            <form action="#" id="addbankaccount" class="add-bank__form">
+                                <div class="add-bank__form-checkgroup">
+                                    <div class="add-bank__form-checkbox">
+                                        <label for="a-option" class="l-radio">
+                                        <input class="l-radio-input" type="radio" checked id="a-option" name="selector" tabindex="4">
+                                        <span>Personal</span>
+                                    </div>
+                                    <div class="add-bank__form-checkbox">
+                                        <label for="b-option" class="l-radio">
+                                        <input class="l-radio-input" type="radio" id="b-option" name="selector" tabindex="4">
+                                        <span>Business</span>
+                                    </div>
+                                </div>
+                                <div class="add-bank__form-control bank_name-control">
+                                    <label for="addbank" class="bank_name-control-label controlled-label">Bank Name</label>
+                                    <input type="text" class="bank_name-control-input shared__input" required placeholder="Enter Bank Name">
+                                </div>
+                                <div class="add-bank__form-control swift_name-control">
+                                    <label for="addswift" class="swift_name-control-label controlled-label">SWIFT Code / BIC</label>
+                                    <input type="text" id="addswift" class="swift_name-control-input shared__input" required placeholder="Enter SWIFT Code / BIC">
+                                </div>
+                                <div class="add-bank__form-control account_name-control">
+                                    <label for="addaccount" class="account_name-control-label controlled-label">Account Number</label>
+                                    <input type="addaccount" class="account_name-control-input shared__input" required placeholder="Enter Account Number">
+                                </div>
+                                <div class="add-bank__form-confirmation">
+                                    <label class="container">
+                                        I confirm the bank account details above.
+                                        <input type="checkbox" name="remember">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="add-bank__form-submit ">
+                                    <button class="add-bank__form-submit-btn shared__button-black">Add Bank Account</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-----END OF ADD BANK MODAL----->
+
+                <!-----END OF COMPLETENESS----->
+
+                <!-----ACTIVITY----->
+
+                <div class="right-col__activity">
+                    <h3 class="activity__heading">Recent Activity</h3>
+                    <table cellspacing="0" cellpadding="16px 24px" class="activity__table">
+                        <thead class="thead">
+                            <tr class="thead-row">
+                                <th class="thdate__cell">Date</th>
+                                <th class="thdesc__cell">Description</th>
+                                <th class="thstatus__cell">Status</th>
+                                <th class="thamount__cell">Amount</th>
+                            <tr>
+                        </thead>
+                        <div class="tbody_container">
+
+                            <tbody class="tbody"></tbody>
+                        </div>
+                    </table>
+                    <div class="activity__more">
+                        <a href="./transactions.html" class="activity__more-link">View All
+                            <i class="activity__more-link-arrow fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--END OF ACTIVITY-->
+
+            <!--END OF RIGHT COL-->
+
+        </main>
+
+        <!-----ACTIVITY MODAL----->
+
+        <div id="activityModal" class="activity__modal">
+            <div class="activity__modal-content">
+                <div class="activity__modal-row">
+                    <div class="activity__modal-left-col">
+                        <div class="modal-left-col__content">
+                            <div class="modal-left-col__icon-container">
+                                <i class="modal-left-col__icon fas fa-building"></i>
+                            </div>
+                            <h3 class="modal-left-col__heading">
+                                Transit withdrawal
+                            </h3>
+                            <p class="modal-left-col__amount">
+                                $9,378.83
+                            </p>
+                            <p class="modal-left-col__date">
+                                6 December 2022
+                            </p>
+                        </div>
+                    </div>
+                    <div class="activity__modal-right-col">
+                        <div class="modal-right-col__header">
+                            <h5 class="modal-right-col__heading">Transaction Details</h5>
+                            <span class="modal-right-col__close-btn">&times;</span>
+                        </div>
+                        <hr class="modal-right-col__hr">
+                        <div class="modal-right-col__info">
+                            <ul class="modal-right-col__payment-list">
+                                <li class="payment-list__item">
+                                    Payment Amount
+                                    <span class="payment-list__sub-item">$9,378.83</span>
+                                </li>
+                                <li class="payment-list__item">
+                                    Fee
+                                    <span class="payment-list__sub-item">-$201.89</span>
+                                </li>
+                            </ul>
+                            <hr class="modal-right-col__hr-bottom">
+                            <div class="modal-right-col__total">
+                                <p class="modal__right-col__total-content">Total Amount </p>
+                                <p class="modal__right-col__total-amount">$9,176.94</p>
+                            </div>
+                            <ul class="modal-right-col__payed-by">
+                                <li class="payed-by__heading">Paid By:</li>
+                                <li class="payed-by__amount">Transit withdrawal</li>
+                            </ul>
+                            <ul class="modal-right-col__trans-id">
+                                <li class="trans-id__heading">Transaction ID:</li>
+                                <li class="trans-id__amount">10865298281176987529</li>
+                            </ul>
+                            <ul class="modal-right-col__desc">
+                                <li class="desc__heading">Description:</li>
+                                <li class="desc__amount">040702615 40817810960350117018</li>
+                            </ul>
+                            <ul class="modal-right-col__status">
+                                <li class="status__heading">Status:</li>
+                                <li class="status__amount">
+                                    Completed
+                                    <i class="status__amount-icon fas fa-check-circle"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----END OF ACTIVITY MODAL----->
+    </section>
+
+    <!-----END OF MAIN----->
+
+    <!-----FOOTER----->
+
+    <footer class="dashboard__footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <p class="footer__content-text">
+                    Copyright © 2021.
+                    <a href="#" class="footer__content-link">
+                        Transit.
+                    </a>
+                    All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!----END OF FOOTER---->
+    <script src="../shared/js/modalStyleHelper.js"></script>
+    <script src="../shared/js/templates/table.js"></script>
+    <script src="../scripts/dashboard.js"></script>
+    <script src="../shared/js/mobileNav.js"></script>
+    <script src="../shared/js/preloader.js"></script>
+</body>
+
+</html>

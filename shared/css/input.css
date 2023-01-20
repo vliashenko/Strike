@@ -1,0 +1,23 @@
+.shared__input {
+    width: 100%;
+    height: 52px;
+    padding: 13px 6px 13px 20px;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid #a1a1a1;
+    font-size: 16px;
+    color: #656565;
+    border-radius: 5px;
+    opacity: 0.4;
+}
+
+.shared__input:focus {
+    -webkit-box-shadow: 0 0 5px rgba(30, 139, 254, 0.5);
+    box-shadow: 0 0 5px rgb(30 139 254 / 50%);
+    border-color: #057bf8;
+    color: #495057;
+    font-weight: 400;
+    outline: 0;
+    opacity: 1;
+    border: none;
+}

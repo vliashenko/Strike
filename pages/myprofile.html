@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/myprofile.css">
+    <script src="https://kit.fontawesome.com/d896977479.js" crossorigin="anonymous"></script>
+    <title>Transit</title>
+</head>
+
+<body>
+    <!-----PRELOADER----->
+    <div class="preloader">
+        <div class="lds-dual-ring"></div>
+    </div>
+    <!-----END OF PRELOADER----->
+
+    <!-----HEADER----->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="./dashboard.html" class="logo__link">
+                    <img src="../images/logo.svg" alt="logo" class="header__logo-content">
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item nav-item">
+                        <a href="./dashboard.html" class="nav-item__link">DASHBOARD</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./transactions.html" class="nav-item__link">TRANSACTIONS</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./withdraw.html" class="nav-item__link">WITHDRAW</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./myprofile.html" class="nav-item__link">MY PROFILE</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./security.html" class="nav-item__link">SECURITY</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a href="./login.html" class="nav-item__link">SIGN OUT</a>
+                    </li>
+                </ul>
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="40" height="35" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+            </nav>
+            <nav class="header-primary__nav">
+                <div class="header-primary__nav-container">
+                    <ul class="header-primary__nav-list">
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./dashboard.html">DASHBOARD</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./transactions.html">TRANSACTIONS</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./withdraw.html">WITHDRAW</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./myprofile.html">MY PROFILE</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./security.html">SECURITY</a>
+                        </li>
+                        <li class="header-primary__nav-item">
+                            <a class="header-primary__nav-link" href="./login.html">SIGN OUT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-----END OF HEADER----->
+
+    <!-----MAIN----->
+    <section class="main__page main">
+        <main class="main__container">
+
+        <!-----LEFT COL----->    
+            <aside class="main__left-col">
+                <div class="left-col__user">
+                    <div class="user__profile-image-con">
+                        <img class="user__profile-image" src="../images/person.png" alt="profile">
+                        <div class="user__profile-sm-container">
+                            <i class="change-icon fas fa-camera"></i>
+                            <div class="tooltip-top">
+                                <input class="change-button" type="file" name="data-edit-photo" title=" ">
+                                <div class="top">
+                                    <h3>Change Profile Picture</h3>
+                                    <i></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="user__username">Hello, Хади Измайлова</p>
+                    <div class="user__edit-continer">
+                        <a href="../pages/myprofile.html" class="edit-container__link">
+                            <i class="edit-icon fas fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="left-col__balance">
+                    <div class="balance__icon-container">
+                        <i class="balance-icon fas fa-wallet"></i>
+                    </div>
+                    <h3 class="balance__amount">$0.00</h3>
+                    <p class="balance__available">Available Balance</p>
+                </div>
+            </aside>
+            <!-----END OF LEFT COL----->
+
+            <!-----RIGHT COL----->
+            <div class="main__right-col">
+   
+            <!-----DETAILS----->
+                <div class="right-col__details">
+                    <div class="right-col__details__heading">
+                        <h3 class="right-col__details__header">
+                            Personal Details
+                        </h3>
+                        <div class="details__change-container">
+                            <i class="details__change-icon fas fa-edit"></i>
+                            <span class="details__change-text">EDIT</span>
+                        </div>
+                    </div>
+                    <hr class="deatails__hr">
+                    <div class="details__name-container">
+                        <p class="details__name-title">
+                            Name:
+                        </p>
+                        <p class="details__name-info">
+                            Хади Измайлова
+                        </p>
+                    </div>
+                    <div class="details__birth-container">
+                        <p class="details__birth-title">
+                            Date of Birth:
+                        </p>
+                        <p class="details__birth-info">
+                            1978-11-04
+                        </p>
+                    </div>
+                    <div class="details__address-container">
+                        <p class="details__address-title">
+                            Address:
+                        </p>
+                        <p class="details__address-info">
+                            ул. Первомайская д.41,
+                            <br>
+                            с.п. Экажево ,
+                            <br>
+                            Респ Ингушетия - 386124,
+                            <br>
+                            Росoсия .
+                        </p>
+                    </div>
+                    <div class="details__ID-container">
+                        <p class="details__ID-title">
+                            Load ID:
+                        </p>
+                        <span class="details__ID-info">
+                            <i class="details__ID-icon fas fa-check-circle"></i>
+                        </span>
+                    </div>
+
+                    <!-----DETAILS MODAL----->
+                    <div class="details__modal">
+                        <div class="details__modal-content">
+                            <div class="details__heading">
+                                <h3 class="details__header">Personal Details</h3>
+                                <span class="details__closeBtn">&times;</span>
+                            </div>
+                            <div class="details__modal-body">
+                                <form id="changedetails" action="#" class="details__form">
+                                    <div class="details__form-row">
+                                        <div class="details__form-row-sm">
+                                            <div class="details__form-group">
+                                                <label for="firstname" class="details__form-label firstname">First
+                                                    Name</label>
+                                                <input id="firstname" type="text" name="name"
+                                                    class="details__form-input shared__input"
+                                                    placeholder="Enter First Name">
+                                            </div>
+                                        </div>
+                                        <div class="details__form-row-sm">
+                                            <div class="details__form-group">
+                                                <label for="lastname" class="details__form-label lastname">Last
+                                                    Name</label>
+                                                <input id="lastname" type="text" name="lastname"
+                                                    class="details__form-input shared__input"
+                                                    placeholder="Enter Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="details__form-row">
+                                            <div class="details__form-group">
+                                                <label for="birthdate" class="details__form-label birthdate">Date of
+                                                    Birth</label>
+                                                <input id="birthdate" type="date" name="birthdate"
+                                                    class="details__form-input shared__input"
+                                                    placeholder="Enter Date of Birth">
+                                            </div>
+                                        </div>
+                                        <div class="details__form-row">
+                                            <hr class="details__form-hr">
+                                        </div>
+                                        <div class="details__form-row">
+                                            <div class="details__form-group">
+                                                <label for="address" class="details__form-label address">Address</label>
+                                                <input id="address" type="text" name="address"
+                                                    class="details__form-input shared__input"
+                                                    placeholder="Enter Address">
+                                            </div>
+                                        </div>
+                                        <div class="details__form-row-sm">
+                                            <div class="details__form-group">
+                                                <label for="city" class="details__form-label city">City</label>
+                                                <input id="city" type="text" name="city"
+                                                    class="details__form-input shared__input" placeholder="Enter City">
+                                            </div>
+                                        </div>
+                                        <div class="details__form-row-sm">
+                                            <div class="details__form-group">
+                                                <label for="state" class="details__form-label state">State</label>
+                                                <input id="state" type="text" name="state"
+                                                    class="details__form-input shared__input" placeholder="Enter State">
+                                            </div>
+                                        </div>
+                                        <div class="details__form-row-sm">
+                                            <div class="details__form-group">
+                                                <label for="zipcode" class="details__form-label zipcode">Zip
+                                                    Code</label>
+                                                <input id="zipcode" type="text" name="zipcode"
+                                                    class="details__form-input shared__input"
+                                                    placeholder="Enter Zip Code">
+                                            </div>
+                                        </div>
+                                        <div class="details__form-row-sm">
+                                            <div class="details__form-group">
+                                                <label for="country" class="details__form-label country">Country</label>
+                                                <input id="country" type="text" name="country"
+                                                    class="details__form-input shared__input"
+                                                    placeholder="Enter Country">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details__formBtn-container">
+                                        <button class="details__btn shared__button-black">
+                                            Save Changes
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                <!-----END OF DETAILS MODAL----->
+                </div>
+                <!-----END OF DETAILS----->
+
+                <!-----ACCOUNTS----->
+                <div class="right-col__accounts">
+                    <h3 class="accounts__heading">Bank Accounts</h3>
+                    <hr class="accounts__hr">
+                    <div class="accounts__row">
+                        <div class="accounts-row__left-col">
+                            <div class="row__left-col-card">
+                                <div class="card__left-col">
+                                    <i class="card__left-col-icon fas fa-university"></i>
+                                    <div class="card__left-col-container">
+                                        <p class="card__left-col-text">
+                                            Primary
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card__right-col">
+                                    <div class="card__right-col-wrapper">
+                                        <p class="card__right-col-heading">WT 7320 MFXP 231032</p>
+                                        <p class="card__right-col-amount">$0.00</p>
+                                        <p class="card__right-col-verified">Verified
+                                            <span class="card__right-col-verified-container">
+                                                <i class="card__right-col-verified-icon fas fa-check-circle"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accounts-row__right-col">
+                            <div class="row__right-col-card">
+                                <div class="right-card__left-col">
+                                    <i class="right-card__left-col-icon fas fa-file-invoice-dollar"></i>
+                                    <div class="right-card__left-col-container">
+                                        <p class="right-card__left-col-text">
+                                            Primary
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="right-card__right-col">
+                                    <div class="right-card__right-col-wrapper">
+                                        <p class="right-card__right-col-heading">
+                                            040702615
+                                            <br>
+                                            40817810960350117018
+                                        </p>
+                                        <p class="right-card__right-col-amount">Ставропольское отделение №5230 ПАО
+                                            СБЕРБАНК</p>
+                                        <p class="right-card__right-col-verified">Хади Измайлова
+                                            <span class="right-card__right-col-verified-container">
+                                                <i class="right-card__right-col-verified-icon fas fa-check-circle"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="account-card-overlay">
+                                    <a href="#" class="account-card-overlay-link">
+                                        <span class="overlay__link-icon">
+                                            <i class="fas fa-edit"></i>
+                                        </span>
+                                        Edit
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-----ACCOUNTS MODAL----->
+                            <div class="add-bank__modal">
+                                <div class="add-bank__modal-content">
+                                    <div class="add-bank__heading">
+                                        <h3 class="add-bank__header">Add bank account</h3>
+                                        <span class="add-bank__closeBtn">&times;</span>
+                                    </div>
+                                    <div class="add-bank__modal-body">
+                                        <form action="#" id="addbankaccount" class="add-bank__form">
+                                            <div class="add-bank__form-checkgroup">
+                                                <div class="add-bank__form-checkbox">
+                                                    <label for="a-option" class="l-radio">
+                                                        <input class="l-radio-input" type="radio" checked id="a-option"
+                                                            name="selector" tabindex="4">
+                                                        <span>Personal</span>
+                                                </div>
+                                                <div class="add-bank__form-checkbox">
+                                                    <label for="b-option" class="l-radio">
+                                                        <input class="l-radio-input" type="radio" id="b-option"
+                                                            name="selector" tabindex="4">
+                                                        <span>Business</span>
+                                                </div>
+                                            </div>
+                                            <div class="add-bank__form-control bank_name-control">
+                                                <label for="addbank"
+                                                    class="bank_name-control-label controlled-label">Bank Name</label>
+                                                <input type="text" class="bank_name-control-input shared__input"
+                                                    required placeholder="Enter Bank Name">
+                                            </div>
+                                            <div class="add-bank__form-control swift_name-control">
+                                                <label for="addswift"
+                                                    class="swift_name-control-label controlled-label">SWIFT Code /
+                                                    BIC</label>
+                                                <input type="text" id="addswift"
+                                                    class="swift_name-control-input shared__input" required
+                                                    placeholder="Enter SWIFT Code / BIC">
+                                            </div>
+                                            <div class="add-bank__form-control account_name-control">
+                                                <label for="addaccount"
+                                                    class="account_name-control-label controlled-label">Account
+                                                    Number</label>
+                                                <input type="addaccount"
+                                                    class="account_name-control-input shared__input" required
+                                                    placeholder="Enter Account Number">
+                                            </div>
+                                            <div class="add-bank__form-confirmation">
+                                                <label class="container">
+                                                    I confirm the bank account details above.
+                                                    <input type="checkbox" name="remember">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="add-bank__form-submit ">
+                                                <button class="add-bank__form-submit-btn shared__button-black">Add Bank
+                                                    Account</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-----END OF ACCOUNTS MODAL----->
+                </div>
+                <!-----END OF ACCOUNT----->
+                
+                <!-----SETTINGS----->
+                <div class="right-col__settings">
+                    <div class="settings__heading">
+                        <h3 class="settings__header">
+                            Account Settings
+                        </h3>
+                    </div>
+                    <hr class="settings__hr">
+                    <div class="settings__ID-container">
+                        <p class="settings__ID-title">
+                            User ID:
+                        </p>
+                        <p class="settings__ID-info">
+                            231032
+                        </p>
+                    </div>
+                    <div class="settings__notifications-container">
+                        <p class="settings__notifications-title">
+                            Notifications:
+                        </p>
+                        <p class="settings__notifications-info">
+                            <i class="settings__notifications-icon fas fa-check-circle"></i>
+                        </p>
+                    </div>
+                    <div class="settings__account-container">
+                        <p class="settings__account-title">
+                            Account Status:
+                        </p>
+                        <p class="settings__account-info">
+                            <span class="settings__account-info-status">
+                                <i class="settings__account-info-status-icon fas fa-check-circle"></i>
+                                Enabled
+                            </span>
+                        </p>
+                    </div>
+                    <div class="settings__verigfication-container">
+                        <p class="settings__verigfication-title">
+                            Verification Status:
+                        </p>
+                        <p class="settings__verigfication-info">
+                            <span class="settings__verigfication-info-status">
+                                <i class="settings__verigfication-info-status-icon fas fa-check-circle"></i>
+                                Verified
+                            </span>
+                        </p>
+                    </div>
+                    <hr class="settings__hr">
+                    <div class="settings__IP-container">
+                        <p class="settings__IP-title">
+                            Last login IP:
+                        </p>
+                        <p class="settings__IP-info">
+                            162.158.159.134
+                        </p>
+                    </div>
+                    <div class="settings__browser-container">
+                        <p class="settings__browser-title">
+                            Browser:
+                        </p>
+                        <p class="settings__browser-info">
+                            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+                            Chrome/108.0.0.0 Safari/537.36
+                        </p>
+                    </div>
+                </div>
+                <!-----END OF SETTINGS----->
+
+                <!-----VERIFICATION----->
+                <div class="right-col__verification">
+                    <div class="right-col__verification__heading">
+                        <h3 class="right-col__verification__header">
+                            Document Verification
+                        </h3>
+                        <div class="verification__change-container">
+                            <i class="verification__change-icon fas fa-edit"></i>
+                            <span class="verification__change-text">EDIT</span>
+                        </div>
+                    </div>
+                    <hr class="verification__hr">
+                    <div class="verification__document-row">
+                        <div class="document-row__item-first">
+                            <div class="document-row__item-first-container">
+                                <div class="document-item-first__icon-container">
+                                    <i class="document-item-first__icon fas fa-plus-circle"></i>
+                                </div>
+                                <p class="document-item-first__text">
+                                    Add Document
+                                </p>
+                                <input class="document-item-first__add-file" type="file" name="" id="">
+                            </div>
+                        </div>
+                        <div class="document-item__rest">
+                            <div class="document-item__photo-container">
+                                <img src="../images/person.png" alt="document img" class="document-item__photo">
+                            </div>
+                        </div>
+                        <div class="document-item__rest">
+                            <div class="document-item__photo-container">
+                                <img src="../images/person.png" alt="document img" class="document-item__photo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----VERIFICATION MODAL----->
+                    <div class="verification__modal">
+                        <div class="verification__modal-content">
+                            <div class="verification__heading">
+                                <h3 class="verification__header">Document Verification</h3>
+                                <span class="verification__closeBtn">&times;</span>
+                            </div>
+                            <div class="verification__modal-body">
+                                <form action="#" id="changephoto" class="verification__form">
+                                    <div class="verification__modal-body-text">
+                                        Do you agree to delete all uploaded documents and upload new ones?
+                                    </div>
+                                    <button class="verification__form-submit-btn shared__button-black">
+                                        Save Changes
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----END OF VERIFICATION MODAL----->
+                </div>
+                <!-----END OF VERIFICATION----->
+
+                <!-----EMAIL----->
+                <div class="right-col__email">
+                    <div class="right-col__email__heading">
+                        <h3 class="right-col__email__header">
+                            Email Addresses
+                        </h3>
+                        <div class="email__change-container">
+                            <i class="email__change-icon fas fa-edit"></i>
+                            <span class="email__change-text">EDIT</span>
+                        </div>
+                    </div>
+                    <hr class="email__hr">
+                    <div class="email__content-container">
+                        <p class="email-content__title">Email ID:</p>
+                        <p class="email-content__info">hadi.albogachieva2014@yandex.ru</p>
+                    </div>
+
+                    <!-----EMAIL MODAL----->
+                    <div class="email__modal">
+                        <div class="email__modal-content">
+                            <div class="email__heading">
+                                <h3 class="email__header">Document Verification</h3>
+                                <span class="email__closeBtn">&times;</span>
+                            </div>
+                            <div class="email__modal-body">
+                                <form action="#" id="changephoto" class="email__form">
+                                    <div class="email__form-input-container">
+                                        <input type="text" class="email__form-input shared__input" id="emailID"
+                                            name="email" required placeholder="Enter Email ID">
+                                    </div>
+                                    <button class="email__form-submit-btn shared__button-black">
+                                        Save Changes
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----END OF EMAIL MODAL----->
+                </div>
+                <!-----END OF EMAIL----->
+
+                <!-----PHONE----->
+                <div class="right-col__phone">
+                    <div class="right-col__phone__heading">
+                        <h3 class="right-col__phone__header">
+                            Phone
+                        </h3>
+                        <div class="phone__change-container">
+                            <i class="phone__change-icon fas fa-edit"></i>
+                            <span class="phone__change-text">EDIT</span>
+                        </div>
+                    </div>
+                    <hr class="phone__hr">
+                    <div class="phone__content-container">
+                        <p class="phone-content__title">Mobile:</p>
+                        <p class="phone-content__info">+79888135748</p>
+                    </div>
+
+                    <!-----PHONE MODAL----->
+                    <div class="phone__modal">
+                        <div class="phone__modal-content">
+                            <div class="phone__heading">
+                                <h3 class="phone__header">Phone</h3>
+                                <span class="phone__closeBtn">&times;</span>
+                            </div>
+                            <div class="phone__modal-body">
+                                <form action="#" id="changephoto" class="phone__form">
+                                    <div class="phone__form-input-container">
+                                        <input type="text" class="phone__form-input shared__input" id="phoneID"
+                                            name="phone" required placeholder="Enter Phone Number">
+                                    </div>
+                                    <button class="phone__form-submit-btn shared__button-black">
+                                        Save Changes
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----END OF PHONE MODAL----->
+                </div>
+                <!-----END OF PHONE----->
+            </div>
+            <!-----END OF RIGHT COL----->
+        </main>
+    </section>
+    <!-----END OF MAIN----->
+
+    <!-----FOOTER----->
+    <footer class="dashboard__footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <p class="footer__content-text">
+                    Copyright © 2021.
+                    <a href="#" class="footer__content-link">
+                        Transit.
+                    </a>
+                    All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-----END OF FOOTER----->
+
+    <script src="../shared/js/modalStyleHelper.js"></script>
+    <script src="../scripts/myprofile.js"></script>
+    <script src="../shared/js/mobileNav.js"></script>
+    <script src="../shared/js/preloader.js"></script>
+</body>
+
+</html>

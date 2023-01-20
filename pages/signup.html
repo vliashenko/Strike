@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/loginization.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Transit</title>
+</head>
+
+<body>
+    <!-----PRELOADER----->
+    <div class="preloader">
+        <div class="lds-dual-ring"></div>
+    </div>
+    <!-----END OF PRELOADER----->
+
+    <!-----SIGN UP----->
+    <section class="login-page login">
+        <div class="login__left-col">
+            <div class="login__container">
+                <div class="left-col__header">
+                    <div class="left-col__header-box">
+                        <a href="/" title="Transit">
+                            <img src="../images/logo-light.png" alt="Transit">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="let-col__main left-content">
+                    <h3 class="left-content__heading">Get Verified!</h3>
+                    <p class="left-content__text">
+                        Every day, Transit makes thousands of customers happy.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="login__right-col">
+            <div class="form__container">
+                <div class="right-col__content">
+                    <h3 class="right-col__heading">
+                        Log In
+                    </h3>
+
+                    <form action="post" class="right-col__form form">
+                        <div class="form__phone">
+                            <p class="phone__label">
+                                <label for="phonegroup">Phone</label>
+                            </p>
+                            <input id="phone" class="form__input" id="phonegroup" type="tel" placeholder="512 345 678">
+                        </div>
+                        <div class="form__email">
+                            <p class="email__label">
+                                <label for="emailgroup">Email</label>
+                            </p>
+                            <input id="email" class="form__input" id="emailgroup" type="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form__password">
+                            <p class="password__label">
+                                <label for="passwordgroup">Password</label>
+                            </p>
+                            <input class="form__input" id="passwordgroup" type="password" placeholder="Enter Password" autocomplete="current-password">
+                        </div>
+                        <div class="form__repeat-password">
+                            <p class="repeat-password__label">
+                                <label for="repeat-passwordgroup">Password Repeat</label>
+                            </p>
+                            <input class="form__input" id="repeat-passwordgroup" type="password" placeholder="Enter Repeat" autocomplete="current-password">
+                        </div>
+                        
+                        <div class="form__button-container">
+                            <button class="form__button" type="submit">Sign Up</button>
+                        </div>
+                    </form>
+                    <div class="right-col__footer">
+                        Already have an account?
+                        <span class="footer__link-container">
+                            <a class="footer__link" href="../pages/login.html">Log In</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----END OF SIGN UP----->
+
+    <script src="../shared/js/countryCodePlugin.js"></script>
+    <script src="../shared/js/preloader.js"></script>
+</body>
+
+</html>
